@@ -2,7 +2,7 @@
 
 8INF957: Advanced object programming
 
-Original french instructions file can be found [here](https://raw.githubusercontent.com/deguilardi/uqac-8INF957-travail-2/master/assets/travail_bloc_B_WARP.pdf).
+Original french instructions file can be found [here](https://raw.githubusercontent.com/deguilardi/uqac-8INF957-travail-2/main/assets/travail_bloc_B_WARP.pdf).
 
 ## Instructions
 
@@ -43,7 +43,7 @@ It is populated by powerful entities that offer listening, power and knowledge t
 
 From the “Singleton” design pattern provided in the discipline's block A (see GoF project), design and program three races (choose from the five available) and invent one of your own.
 
-![Image of Yaktocat](https://raw.githubusercontent.com/deguilardi/uqac-8INF957-travail-2/master/assets/base-class-diagram.png)
+![Base class diagram](https://raw.githubusercontent.com/deguilardi/uqac-8INF957-travail-2/main/assets/base-class-diagram.png)
 
 *"MonServeur" is the Warp
 * The Services are: Advice, Miracle, Listening and <another of your choice>
