@@ -27,29 +27,31 @@ It is populated by powerful entities that offer listening, power and knowledge t
 * "Tyranids" are linked by a synaptic link to the beehive spirit "l'espirit de la ruche"
 * Agents of "Chaos" Worship "Khorne", the God of War
 
-### Each breed worship the Warp their own ways and in a different forms.
+### Each breed worships the Warp their own ways and in different forms.
 
 ### Warp entities perform the following tasks for their followers
 
 * Provide advice without particular reason
-* Provide advice based on a demand
+* Provide advice on demand
 * Perform miracles
-* Listening to needs without responding
-* Listen to needs and respond as an advice
+* Listen to needs without responding
+* Listen to needs and respond with an advice
 * Listen to needs and perform a miracle
 * Etc (add 3 other tasks for your work)
 
-## How it works
+## What to do
 
 From the “Singleton” design pattern provided in the discipline's block A (see GoF project), design and program three races (choose from the five available) and invent one of your own.
 
 ![Base class diagram](https://raw.githubusercontent.com/deguilardi/uqac-8INF957-travail-2/main/assets/base-class-diagram.png)
 
-*"MonServeur" is the Warp
-* The Services are: Advice, Miracle, Listening and <another of your choice>
-* Each race can access the Warp with their hand.
+In this example:
+
+* "MonServeur" is the Warp
+* The Services are: Advice, Miracle, Listen and <another of your choice>
+* Each race can access the Warp on the main() method.
 * The Warp package can only contain Warp, Services and Interfaces
-* Use the hand to test your solution
+* Use the main method to test your solution
 
 ### Friend's advices
 
