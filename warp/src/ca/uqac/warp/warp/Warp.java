@@ -7,14 +7,14 @@ public class Warp {
     GorkEtMork gorkEtMork;
     LespiritDeLaRuche lespiritDeLaRuche;
 
-    private Warp(){
+    Warp(){
         empereurDieu = new EmpereurDieu();
         cegorach = new Cegorach();
         gorkEtMork = new GorkEtMork();
         lespiritDeLaRuche = new LespiritDeLaRuche();
     }
 
-    protected void respond(WarpEntity entity, String matter, String response){
+    void respond(WarpEntity entity, String matter, String response){
         StringBuilder sb = new StringBuilder();
         sb.append(entity.name).append(" performed ").append(entity.action);
         if(matter != null) {
@@ -30,23 +30,23 @@ public class Warp {
         System.out.println(sb.toString());
     }
 
-    public static Warp getInstance(){
+    static Warp getInstance(){
         return instance;
     }
 
-    public EmpereurDieuInterface getEmpereurDieuInterface() {
-        return (EmpereurDieuInterface) empereurDieu;
+    public static EmpereurDieuInterface getEmpereurDieuInterface() {
+        return (EmpereurDieuInterface) instance.empereurDieu;
     }
 
-    public CegorachInterface getCegorachInterface() {
-        return (CegorachInterface) cegorach;
+    public static CegorachInterface getCegorachInterface() {
+        return (CegorachInterface) instance.cegorach;
     }
 
-    public GorkEtMorkInterface getGorkEtMorkInterface() {
-        return (GorkEtMork) gorkEtMork;
+    public static GorkEtMorkInterface getGorkEtMorkInterface() {
+        return (GorkEtMork) instance.gorkEtMork;
     }
 
-    public LespiritDeLaRucheInterface getLespiritDeLaRucheInterface() {
-        return (LespiritDeLaRuche) lespiritDeLaRuche;
+    public static LespiritDeLaRucheInterface getLespiritDeLaRucheInterface() {
+        return (LespiritDeLaRuche) instance.lespiritDeLaRuche;
     }
 }

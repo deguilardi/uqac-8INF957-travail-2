@@ -4,7 +4,7 @@ import ca.uqac.warp.warp.GorkEtMorkInterface;
 import ca.uqac.warp.warp.Warp;
 
 public class Orks {
-    private GorkEtMorkInterface entity = Warp.getInstance().getGorkEtMorkInterface();
+    private GorkEtMorkInterface entity = Warp.getGorkEtMorkInterface();
 
     public GorkEtMorkInterface getEntity() {
         return entity;
