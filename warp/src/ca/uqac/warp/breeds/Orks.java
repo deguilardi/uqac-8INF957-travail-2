@@ -1,11 +1,12 @@
 package ca.uqac.warp.breeds;
 
+import ca.uqac.warp.warp.GorkEtMorkInterface;
 import ca.uqac.warp.warp.Warp;
 
 public class Orks {
-    private Warp gorkEtMork = Warp.getInstance();
+    private GorkEtMorkInterface entity = Warp.getInstance().getGorkEtMorkInterface();
 
-    public Warp getGorkEtMork() {
-        return gorkEtMork;
+    public GorkEtMorkInterface getEntity() {
+        return entity;
     }
 }

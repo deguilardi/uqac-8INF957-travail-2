@@ -1,11 +1,12 @@
 package ca.uqac.warp.breeds;
 
+import ca.uqac.warp.warp.CegorachInterface;
 import ca.uqac.warp.warp.Warp;
 
 public class Harlequins {
-    private Warp cegorach = Warp.getInstance();
+    private CegorachInterface entity = Warp.getInstance().getCegorachInterface();
 
-    public Warp getCegorach() {
-        return cegorach;
+    public CegorachInterface getEntity() {
+        return entity;
     }
 }

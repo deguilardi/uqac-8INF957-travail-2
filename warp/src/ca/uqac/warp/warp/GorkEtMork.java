@@ -1,9 +1,9 @@
 package ca.uqac.warp.warp;
 
-public class Miracle extends WarpService implements MiracleInterface{
+public class GorkEtMork extends WarpEntity implements GorkEtMorkInterface {
 
-    Miracle(){
-        super("MIRACLE");
+    GorkEtMork(){
+        super("GORK ET MORK", "MIRACLE");
     }
 
     @Override

@@ -2,21 +2,21 @@ package ca.uqac.warp.warp;
 
 public class Warp {
     private static Warp instance = new Warp();
-    private AdviceInterface advice;
-    private ListenInterface listen;
-    private MiracleInterface miracle;
-    private PunishInterface punish;
+    EmpereurDieu empereurDieu;
+    Cegorach cegorach;
+    GorkEtMork gorkEtMork;
+    LespiritDeLaRuche lespiritDeLaRuche;
 
     private Warp(){
-        advice = new Advice();
-        listen = new Listen();
-        miracle = new Miracle();
-        punish = new Punish();
+        empereurDieu = new EmpereurDieu();
+        cegorach = new Cegorach();
+        gorkEtMork = new GorkEtMork();
+        lespiritDeLaRuche = new LespiritDeLaRuche();
     }
 
-    public void respond(WarpService service, String matter, String response){
+    protected void respond(WarpEntity entity, String matter, String response){
         StringBuilder sb = new StringBuilder();
-        sb.append("Warp performed ").append(service.ACTION);
+        sb.append(entity.name).append(" performed ").append(entity.action);
         if(matter != null) {
             sb.append(", for the matter(s) << ").append(matter).append(" >>");
         }else{
@@ -34,19 +34,19 @@ public class Warp {
         return instance;
     }
 
-    public AdviceInterface getAdvice() {
-        return advice;
+    public EmpereurDieuInterface getEmpereurDieuInterface() {
+        return (EmpereurDieuInterface) empereurDieu;
     }
 
-    public ListenInterface getListen() {
-        return listen;
+    public CegorachInterface getCegorachInterface() {
+        return (CegorachInterface) cegorach;
     }
 
-    public MiracleInterface getMiracle() {
-        return miracle;
+    public GorkEtMorkInterface getGorkEtMorkInterface() {
+        return (GorkEtMork) gorkEtMork;
     }
 
-    public PunishInterface getPunish() {
-        return punish;
+    public LespiritDeLaRucheInterface getLespiritDeLaRucheInterface() {
+        return (LespiritDeLaRuche) lespiritDeLaRuche;
     }
 }

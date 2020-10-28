@@ -1,6 +1,6 @@
 package ca.uqac.warp.warp;
 
-public interface MiracleInterface {
+public interface GorkEtMorkInterface {
     void makeLameToWalk();
     void giveSightToBlind();
     void multiplyBreadAndFish(Integer rate);

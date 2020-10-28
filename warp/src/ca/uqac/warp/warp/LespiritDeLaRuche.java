@@ -1,9 +1,9 @@
 package ca.uqac.warp.warp;
 
-public class Punish extends WarpService implements PunishInterface{
+public class LespiritDeLaRuche extends WarpEntity implements LespiritDeLaRucheInterface {
 
-    Punish(){
-        super("PUNISH");
+    LespiritDeLaRuche(){
+        super("L'SPIRIT DE LA RUCHE", "PUNISHMENT");
     }
 
     @Override

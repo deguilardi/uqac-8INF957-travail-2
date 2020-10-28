@@ -11,18 +11,18 @@ public class Main {
         Harlequins harlequins = new Harlequins();
         Orks orks = new Orks();
         Tyranids tyranids = new Tyranids();
-        Chaos chaos = new Chaos();
 
         // Perform some test interactions
-        psykers.getEmpereurDieu().getAdvice().onDemand("Ran out of water");
-        psykers.getEmpereurDieu().getMiracle().makeLameToWalk();
-        harlequins.getCegorach().getListen().needsWithoutResponding(new String[]{"I'm tired", "I need a job", "Save my son"});
-        harlequins.getCegorach().getMiracle().multiplyBreadAndFish(123);
-        orks.getGorkEtMork().getAdvice().withoutParticularReason();
-        orks.getGorkEtMork().getPunish().sendToHell();
-        tyranids.getLespiritDeLaRuche().getPunish().giveSeriousDisease();
-        tyranids.getLespiritDeLaRuche().getPunish().instantKill();
-        chaos.getKhorne().getListen().needsRespondingWithAdvice(new String[]{"Need bananas", "Have no money"});
-        chaos.getKhorne().getMiracle().giveSightToBlind();
+        psykers.getEntity().adviceOnDemand("Ran out of water");
+        psykers.getEntity().adviceWithoutParticularReason();
+        harlequins.getEntity().listenToNeedsWithoutResponding(new String[]{"I'm tired", "I need a job", "Save my son"});
+        harlequins.getEntity().listenToNeedsRespondingWithAdvice(new String[]{"Need bananas", "Have no money"});
+        harlequins.getEntity().listenToNeedsRespondingWithMiracle(new String[]{"We're out of food", "We need jobs"});
+        orks.getEntity().giveSightToBlind();
+        orks.getEntity().makeLameToWalk();
+        orks.getEntity().multiplyBreadAndFish(123);
+        tyranids.getEntity().giveSeriousDisease();
+        tyranids.getEntity().instantKill();
+        tyranids.getEntity().sendToHell();
     }
 }

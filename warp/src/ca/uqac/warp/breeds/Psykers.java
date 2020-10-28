@@ -1,11 +1,12 @@
 package ca.uqac.warp.breeds;
 
+import ca.uqac.warp.warp.EmpereurDieuInterface;
 import ca.uqac.warp.warp.Warp;
 
 public class Psykers {
-    private Warp empereurDieu = Warp.getInstance();
+    private EmpereurDieuInterface entity = Warp.getInstance().getEmpereurDieuInterface();
 
-    public Warp getEmpereurDieu() {
-        return empereurDieu;
+    public EmpereurDieuInterface getEntity() {
+        return entity;
     }
 }
